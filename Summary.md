@@ -20,6 +20,16 @@ $ git clone <url> || <newDir>
 
 * Precisa de permissão para se clonar um diretorio
 
+Atualizar diretorio fazendo o download de novos dados do repositorio para o diretorio local
+
+$ git fetch
+
+* para automaticamente dar fetch e merge utilizar o...
+
+$ git pull
+
+* git fetch basta "baixar" as alterações do controle remoto para o seu repositório local. git pull baixa as alterações e as mescla em sua filial atual.
+
 Verificando o status de seus arquivos
 
 $ git status || -s
@@ -63,3 +73,41 @@ Logs de commit
 $ git log
 
 * O git log tem diversas opções(-) para disponolizar os dados
+
+Verificar a branch do URL do repositorio
+
+$ git branch
+
+Adiciona branch ao repositorio
+
+$ git branch <newBranch>
+
+alterar branch ao repositorio
+
+$ git checkout <newBranch>
+
+Fazer o merge entre dois branchs
+
+$ git merge <newBranch>
+
+Remover a branch do repositorio
+
+* delete branch locally
+$ git branch -d localBranchName
+
+* delete branch remotely
+$ git push origin --delete remoteBranchName
+
+Verificar a origem do URL do repositorio
+
+$ git remote -v
+
+Remover a origem do repositorio
+
+$ git remote remove origin
+
+Adiciona origem ao repositorio
+
+$ git remote add origin <URL>
+
+* Você pode adicionar mais de uma origem 
