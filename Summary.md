@@ -91,7 +91,8 @@ Verificar repositorio
 $ git remote show <Shortname>
 * Mostra o status de todos os repositorios 
 
-renomear repositorio
-''''$ git remote rename <Name> <newName>'''
+Renomear repositorio
+  
+`$ git remote rename <Name> <newName>`
 
 
