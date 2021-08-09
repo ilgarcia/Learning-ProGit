@@ -1,7 +1,8 @@
 #### Configurações em geral
 
+Configurações das variaveis que controlam todos os aspectos que o git verifica e opera.
+
 `$ git config`
-* Configurações das variaveis que controlam todos os aspectos que o git verifica e opera.
 ```
 $ git help <verbo>
 $ git <verbo> -h
@@ -16,15 +17,15 @@ $ git init
 Clonando repositorio existente
 
 `$ git clone <url> || <newDir>`
-* Precisa de permissão para se clonar um diretorio
+> Precisa de permissão para se clonar um diretorio
 
-Atualizar diretorio fazendo o download de novos dados do repositorio para o diretorio local
+Recuperar o ultimo meta-data do repositorio
 
 `$ git fetch`
-* para automaticamente dar fetch e merge utilizar o...
+
+Recuperar o ultimo meta-data do repositorio e da merge com o diretorio local
 
 `$ git pull`
-* git fetch basta "baixar" as alterações do controle remoto para o seu repositório local. git pull baixa as alterações e as mescla em sua filial atual.
 
 Verificando o status de seus arquivos
 
@@ -37,10 +38,12 @@ $ git commit
 $ git commit -m "Descrição do commit"
 $ git commit -a > Pula a etapa de Staging
 ```
+> Para se ignorar arquivos e extensões deve se criar um arquivo .gitignore
+
 Unmodifying o arquivo 
 
 `$ git checkout --<file>` 
-* Este comando é perigoso pq qualquer alteração local é desfeita*
+> Este comando é perigoso pq qualquer alteração local é desfeita*
 
 Unstaging o arquivo
 
@@ -49,7 +52,6 @@ Unstaging o arquivo
 Refazer o ultimo commit
 
 `$ git commit -- amend`
-* Para se ignorar arquivos e extensões deve se criar um arquivo .gitignore
 
 Removendo os arquivos na Staged area
 
@@ -60,15 +62,18 @@ Movendo/Renomenando arquivos
 `$ git mv <file_from> <file_to>`
 
 Diferença entre versões
+Compara Staged e Unstaged
 
 `$ git diff`
-* Compara Staged e Unstaged
+
+Compara Staged e Commit
+
 `$ git diff --staged (ou --cached)` 
-* Compara Staged e Commit
 
 Logs de commit
+
 `$ git log`
-* O git log tem diversas opções(-) para disponolizar os dados
+> O git log tem diversas opções(-) para disponolizar os dados
 
 Verificar a branch do URL do repositorio
 
@@ -87,10 +92,11 @@ Fazer o merge entre dois branchs
 `$ git merge <newBranch>`
 
 Remover a branch do repositorio
-- delete branch locally
+Delete branch locally
 
 `$ git branch -d localBranchName`
-- delete branch remotely
+
+Delete branch remotely
 
 `$ git push origin --delete remoteBranchName`
 
@@ -105,7 +111,7 @@ Remover a origem do repositorio
 Adiciona outro repositorio
 
 `$ git remote add <Shortname> <URL>`
-* Você pode adicionar mais de uma origem 
+> Você pode adicionar mais de uma origem 
 
 Referenciar repositorio
 ```
@@ -115,7 +121,7 @@ $ git push <Shortname> <Branch>
 Verificar repositorio
 
 `$ git remote show <Shortname>`
-* Mostra o status de todos os repositorios 
+> Mostra o status dos repositorios 
 
 Renomear repositorio
   
